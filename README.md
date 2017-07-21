@@ -1,4 +1,5 @@
-# Sea lion counter
+Sea lion counter
+================
 
 This is the 37th place solution to the "NOAA Fisheries Steller Sea Lion Population Count" Kaggle Challenge. It is based on an [Inception-v4 network](https://arxiv.org/abs/1602.07261) (pre-trained on ImageNet; Szegedy et al., 2016) and [Count-ception](https://arxiv.org/abs/1703.08710) (Cohen et al., 2017). Our major change to Count-ception was to reduce the size of the targets to a much smaller resolution than the input using strided convolutions. Thereby we substantially reduced the memory and computation demands and time until convergence. Special care was taken to provide additional inputs to the network such that it can perceive of animals beyond the boundaries of the input image patches.
 
